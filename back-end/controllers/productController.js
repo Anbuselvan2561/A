@@ -10,7 +10,8 @@ exports.getProducts = async (req,res,next)=>{
   const products = await  ProductModel.find(query)
       res.json({
         success:true,
-        products
+        products,
+        message:"sucessful.!"
     })
 
 };
